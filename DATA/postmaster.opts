@@ -1,0 +1,1 @@
+/Applications/Postgres.app/Contents/Versions/13/bin/postgres "-D" "/Users/aleksejtihonov/Desktop/Python/shop_bot/DATA" "-p" "5432"

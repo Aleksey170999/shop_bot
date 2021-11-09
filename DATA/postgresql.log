@@ -1,0 +1,256 @@
+2021-11-04 17:02:09.507 MSK [32798] LOG:  starting PostgreSQL 13.4 on x86_64-apple-darwin19.6.0, compiled by Apple clang version 11.0.3 (clang-1103.0.32.62), 64-bit
+2021-11-04 17:02:09.509 MSK [32798] LOG:  listening on IPv6 address "::1", port 5432
+2021-11-04 17:02:09.509 MSK [32798] LOG:  listening on IPv4 address "127.0.0.1", port 5432
+2021-11-04 17:02:09.509 MSK [32798] LOG:  listening on Unix socket "/tmp/.s.PGSQL.5432"
+2021-11-04 17:02:09.513 MSK [32799] LOG:  database system was shut down at 2021-11-04 17:02:09 MSK
+2021-11-04 17:02:09.522 MSK [32798] LOG:  database system is ready to accept connections
+2021-11-04 17:02:27.719 MSK [32798] LOG:  received fast shutdown request
+2021-11-04 17:02:27.720 MSK [32798] LOG:  aborting any active transactions
+2021-11-04 17:02:27.722 MSK [32798] LOG:  background worker "logical replication launcher" (PID 32805) exited with exit code 1
+2021-11-04 17:02:27.722 MSK [32800] LOG:  shutting down
+2021-11-04 17:02:27.727 MSK [32798] LOG:  database system is shut down
+2021-11-04 17:02:35.083 MSK [32832] LOG:  starting PostgreSQL 13.4 on x86_64-apple-darwin19.6.0, compiled by Apple clang version 11.0.3 (clang-1103.0.32.62), 64-bit
+2021-11-04 17:02:35.085 MSK [32832] LOG:  listening on IPv6 address "::1", port 5432
+2021-11-04 17:02:35.085 MSK [32832] LOG:  listening on IPv4 address "127.0.0.1", port 5432
+2021-11-04 17:02:35.085 MSK [32832] LOG:  listening on Unix socket "/tmp/.s.PGSQL.5432"
+2021-11-04 17:02:35.089 MSK [32833] LOG:  database system was shut down at 2021-11-04 17:02:27 MSK
+2021-11-04 17:02:35.097 MSK [32832] LOG:  database system is ready to accept connections
+2021-11-04 17:02:49.073 MSK [32842] FATAL:  database "el_shopbot" does not exist
+2021-11-04 17:03:12.257 MSK [32851] FATAL:  database "el_shopbot" does not exist
+2021-11-04 17:03:57.616 MSK [32857] FATAL:  database "el_shopbot" does not exist
+2021-11-04 17:04:06.996 MSK [32862] FATAL:  database "el_shopbot" does not exist
+2021-11-04 17:04:48.298 MSK [32884] FATAL:  database "el_shopbot" does not exist
+2021-11-04 17:04:49.426 MSK [32887] FATAL:  database "el_shopbot" does not exist
+2021-11-04 17:04:49.931 MSK [32889] FATAL:  database "el_shopbot" does not exist
+2021-11-04 17:04:50.464 MSK [32891] FATAL:  database "el_shopbot" does not exist
+2021-11-04 17:37:21.063 MSK [33399] ERROR:  syntax error at end of input at character 25
+2021-11-04 17:37:21.063 MSK [33399] STATEMENT:  INSERT INTO users values
+2021-11-04 17:48:39.807 MSK [33851] FATAL:  database "127.0.0.1" does not exist
+2021-11-04 17:49:57.111 MSK [33854] ERROR:  syntax error at or near "name" at character 20
+2021-11-04 17:49:57.111 MSK [33854] STATEMENT:  CREATE TABLE users
+	name varchar(20)
+	,
+	id varchar(20);
+2021-11-04 17:56:40.575 MSK [33965] ERROR:  column "aleksey170999" does not exist at character 27
+2021-11-04 17:56:40.575 MSK [33965] STATEMENT:  INSERT INTO users VALUES (Aleksey170999, 784017926)
+2021-11-04 17:58:15.744 MSK [33983] ERROR:  column "aleksey170999" does not exist at character 26
+2021-11-04 17:58:15.744 MSK [33983] STATEMENT:  INSERT INTO users VALUES(Aleksey170999, 784017926)
+2021-11-04 17:59:20.411 MSK [33998] ERROR:  column "aleksey170999" does not exist at character 36
+2021-11-04 17:59:20.411 MSK [33998] STATEMENT:  INSERT INTO users(name, id) VALUES(Aleksey170999, 784017926)
+2021-11-04 18:01:01.534 MSK [34023] ERROR:  column "aleksey170999" does not exist at character 36
+2021-11-04 18:01:01.534 MSK [34023] STATEMENT:  INSERT INTO users(name, id) VALUES(Aleksey170999, 784017926);
+2021-11-04 18:01:14.757 MSK [34030] ERROR:  syntax error at or near "784017926" at character 40
+2021-11-04 18:01:14.757 MSK [34030] STATEMENT:  INSERT INTO usersVALUES(Aleksey170999, 784017926);
+2021-11-04 18:01:28.762 MSK [34038] ERROR:  syntax error at or near "784017926" at character 40
+2021-11-04 18:01:28.762 MSK [34038] STATEMENT:  INSERT INTO usersVALUES(Aleksey170999, 784017926);
+2021-11-04 18:03:38.499 MSK [34074] ERROR:  syntax error at or near "784017926" at character 40
+2021-11-04 18:03:38.499 MSK [34074] STATEMENT:  INSERT INTO usersVALUES(Aleksey170999, 784017926);
+2021-11-04 18:04:27.920 MSK [34011] ERROR:  syntax error at or near "in" at character 8
+2021-11-04 18:04:27.920 MSK [34011] STATEMENT:  insert in users values(12345, 67890);
+2021-11-04 18:04:54.438 MSK [34097] ERROR:  column "aleksey170999" does not exist at character 26
+2021-11-04 18:04:54.438 MSK [34097] STATEMENT:  INSERT INTO users VALUES(Aleksey170999, 784017926);
+2021-11-04 18:06:04.886 MSK [34011] ERROR:  syntax error at or near "cls" at character 1
+2021-11-04 18:06:04.886 MSK [34011] STATEMENT:  cls
+	clear
+	;
+2021-11-04 18:08:13.506 MSK [34011] ERROR:  syntax error at or near "roles" at character 1
+2021-11-04 18:08:13.506 MSK [34011] STATEMENT:  roles;
+2021-11-04 18:08:19.410 MSK [34011] ERROR:  relation "roles" does not exist at character 15
+2021-11-04 18:08:19.410 MSK [34011] STATEMENT:  select * from roles;
+2021-11-04 18:08:23.902 MSK [34011] ERROR:  syntax error at or near "role" at character 1
+2021-11-04 18:08:23.902 MSK [34011] STATEMENT:  role;
+2021-11-04 18:11:25.788 MSK [34239] ERROR:  column "aleksey170999" does not exist at character 37
+2021-11-04 18:11:25.788 MSK [34239] STATEMENT:  INSERT INTO users VALUES(784017926, Aleksey170999);
+2021-11-04 18:12:21.429 MSK [34264] ERROR:  column "aleksey170999" does not exist at character 36
+2021-11-04 18:12:21.429 MSK [34264] STATEMENT:  INSERT INTO users(name, id) VALUES(Aleksey170999, 784017926);
+2021-11-04 18:13:13.395 MSK [34283] ERROR:  column "aleksey170999" does not exist at character 36
+2021-11-04 18:13:13.395 MSK [34283] STATEMENT:  INSERT INTO users(name, id) VALUES(Aleksey170999, 784017926);
+2021-11-04 18:15:48.577 MSK [34308] ERROR:  column "aleksey170999" does not exist at character 36
+2021-11-04 18:15:48.577 MSK [34308] STATEMENT:  INSERT INTO users(name, id) VALUES(Aleksey170999, 784017926);
+2021-11-04 18:17:37.715 MSK [34352] ERROR:  column "aleksey170999" does not exist at character 36
+2021-11-04 18:17:37.715 MSK [34352] STATEMENT:  INSERT INTO users(name, id) VALUES(Aleksey170999, 784017926);
+2021-11-04 18:18:31.778 MSK [34365] ERROR:  column "aleksey170999" does not exist at character 36
+2021-11-04 18:18:31.778 MSK [34365] STATEMENT:  INSERT INTO users(name, id) VALUES(Aleksey170999, 784017926);
+2021-11-04 18:20:24.877 MSK [34398] ERROR:  column "aleksey170999" does not exist at character 36
+2021-11-04 18:20:24.877 MSK [34398] STATEMENT:  INSERT INTO users(name, id) VALUES(Aleksey170999, 784017926);
+2021-11-04 18:20:59.657 MSK [34413] ERROR:  column "aleksey170999" does not exist at character 26
+2021-11-04 18:20:59.657 MSK [34413] STATEMENT:  INSERT INTO users VALUES(Aleksey170999, 784017926);
+2021-11-04 19:36:27.772 MSK [34488] ERROR:  column "aleksey170999" does not exist at character 26
+2021-11-04 19:36:27.772 MSK [34488] STATEMENT:  INSERT INTO users VALUES(Aleksey170999, 784017926);
+2021-11-04 19:36:27.773 MSK [34488] ERROR:  current transaction is aborted, commands ignored until end of transaction block
+2021-11-04 19:36:27.773 MSK [34488] STATEMENT:  INSERT INTO users VALUES(Aleksey170999, 784017926);
+2021-11-04 19:36:49.956 MSK [34497] ERROR:  column "aleksey170999" does not exist at character 26
+2021-11-04 19:36:49.956 MSK [34497] STATEMENT:  INSERT INTO users VALUES(Aleksey170999, 784017926);
+2021-11-04 20:03:15.283 MSK [34643] ERROR:  column "Aleksey170999" does not exist at character 26
+2021-11-04 20:03:15.283 MSK [34643] STATEMENT:  INSERT INTO users VALUES("Aleksey170999", "784017926");
+2021-11-04 20:03:27.410 MSK [34653] ERROR:  column "Aleksey170999" does not exist at character 26
+2021-11-04 20:03:27.410 MSK [34653] STATEMENT:  INSERT INTO users VALUES("Aleksey170999", "784017926");
+2021-11-04 20:07:41.599 MSK [34724] LOG:  unexpected EOF on client connection with an open transaction
+2021-11-04 20:08:14.323 MSK [34747] LOG:  unexpected EOF on client connection with an open transaction
+2021-11-04 20:08:34.665 MSK [34785] LOG:  unexpected EOF on client connection with an open transaction
+2021-11-04 20:10:13.820 MSK [34815] LOG:  unexpected EOF on client connection with an open transaction
+2021-11-04 20:10:23.113 MSK [34823] LOG:  unexpected EOF on client connection with an open transaction
+2021-11-04 20:10:56.946 MSK [34833] LOG:  unexpected EOF on client connection with an open transaction
+2021-11-04 20:14:08.866 MSK [34916] LOG:  unexpected EOF on client connection with an open transaction
+2021-11-04 20:21:40.762 MSK [35034] ERROR:  syntax error at or near "INSEERT" at character 1
+2021-11-04 20:21:40.762 MSK [35034] STATEMENT:  INSEERT INTO users VALUES(1, 2)
+2021-11-04 20:21:42.571 MSK [35041] ERROR:  syntax error at or near "INSEERT" at character 1
+2021-11-04 20:21:42.571 MSK [35041] STATEMENT:  INSEERT INTO users VALUES(1, 2)
+2021-11-04 20:21:45.744 MSK [35045] ERROR:  syntax error at or near "INSEERT" at character 1
+2021-11-04 20:21:45.744 MSK [35045] STATEMENT:  INSEERT INTO users VALUES(1, 2)
+2021-11-04 20:21:49.190 MSK [35049] ERROR:  relation "users" does not exist at character 13
+2021-11-04 20:21:49.190 MSK [35049] STATEMENT:  INSERT INTO users VALUES(1, 2)
+2021-11-04 20:27:29.676 MSK [35175] ERROR:  column "aleksey170999" does not exist at character 26
+2021-11-04 20:27:29.676 MSK [35175] STATEMENT:  INSERT INTO users VALUES(Aleksey170999, 784017926);
+2021-11-04 20:27:53.090 MSK [35185] ERROR:  column "aleksey170999" does not exist at character 26
+2021-11-04 20:27:53.090 MSK [35185] STATEMENT:  INSERT INTO users VALUES(Aleksey170999, 784017926);
+2021-11-04 20:27:59.318 MSK [35201] ERROR:  column "aleksey170999" does not exist at character 26
+2021-11-04 20:27:59.318 MSK [35201] STATEMENT:  INSERT INTO users VALUES(Aleksey170999, 784017926);
+2021-11-04 20:28:20.086 MSK [35216] ERROR:  column "aleksey170999" does not exist at character 26
+2021-11-04 20:28:20.086 MSK [35216] STATEMENT:  INSERT INTO users VALUES(Aleksey170999, 784017926);
+2021-11-04 20:28:46.424 MSK [35239] ERROR:  column "aleksey170999" does not exist at character 26
+2021-11-04 20:28:46.424 MSK [35239] STATEMENT:  INSERT INTO users VALUES(Aleksey170999, 784017926);
+2021-11-04 20:30:13.814 MSK [34538] ERROR:  syntax error at or near "*" at character 8
+2021-11-04 20:30:13.814 MSK [34538] STATEMENT:  delete * from users;
+2021-11-04 20:30:24.614 MSK [34538] ERROR:  syntax error at or near "*" at character 6
+2021-11-04 20:30:24.614 MSK [34538] STATEMENT:  drop * from users;
+2021-11-04 20:30:33.009 MSK [34538] ERROR:  syntax error at or near "VALUES" at character 6
+2021-11-04 20:30:33.009 MSK [34538] STATEMENT:  drop VALUES from users;
+2021-11-04 20:30:40.728 MSK [34538] ERROR:  syntax error at or near "VALUES" at character 8
+2021-11-04 20:30:40.728 MSK [34538] STATEMENT:  delete VALUES from users;
+2021-11-04 20:30:52.747 MSK [34538] ERROR:  syntax error at or near "remove" at character 1
+2021-11-04 20:30:52.747 MSK [34538] STATEMENT:  remove* from users;
+2021-11-04 21:00:19.351 MSK [34538] ERROR:  syntax error at or near "VALUES" at character 8
+2021-11-04 21:00:19.351 MSK [34538] STATEMENT:  delete VALUES from users;
+2021-11-04 21:01:05.648 MSK [35560] ERROR:  column "aleksey170999" does not exist at character 26
+2021-11-04 21:01:05.648 MSK [35560] STATEMENT:  INSERT INTO users VALUES(Aleksey170999, 784017926);
+2021-11-04 21:01:30.914 MSK [35577] ERROR:  column "aleksey170999" does not exist at character 26
+2021-11-04 21:01:30.914 MSK [35577] STATEMENT:  INSERT INTO users VALUES(Aleksey170999, 892751387);
+2021-11-04 21:01:44.475 MSK [35585] ERROR:  column "aleksey170999" does not exist at character 26
+2021-11-04 21:01:44.475 MSK [35585] STATEMENT:  INSERT INTO users VALUES(aleksey170999, 892751387);
+2021-11-04 21:01:44.476 MSK [35585] ERROR:  column "aleksey170999" does not exist at character 26
+2021-11-04 21:01:44.476 MSK [35585] STATEMENT:  INSERT INTO users VALUES(aleksey170999, 892751387);
+2021-11-04 21:01:46.625 MSK [35591] ERROR:  column "aleksey170999" does not exist at character 26
+2021-11-04 21:01:46.625 MSK [35591] STATEMENT:  INSERT INTO users VALUES(aleksey170999, 892751387);
+2021-11-04 21:03:58.065 MSK [35623] ERROR:  column "a" does not exist at character 26
+2021-11-04 21:03:58.065 MSK [35623] STATEMENT:  INSERT INTO users VALUES(a, 8);
+2021-11-04 21:05:49.753 MSK [34538] ERROR:  syntax error at or near "PRIMARY" at character 86
+2021-11-04 21:05:49.753 MSK [34538] STATEMENT:  create table users(
+	user_name varchar(20) not null,
+	user_id varchar(20) not null,
+	id PRIMARY KEY)
+	;
+2021-11-04 21:07:04.881 MSK [35663] ERROR:  null value in column "id" of relation "users" violates not-null constraint
+2021-11-04 21:07:04.881 MSK [35663] DETAIL:  Failing row contains (9, 8, null).
+2021-11-04 21:07:04.881 MSK [35663] STATEMENT:  INSERT INTO users VALUES(9, 8);
+2021-11-04 21:08:38.482 MSK [35695] ERROR:  column "aleksey170999" does not exist at character 26
+2021-11-04 21:08:38.482 MSK [35695] STATEMENT:  INSERT INTO users VALUES(Aleksey170999, 784017926);
+2021-11-04 21:09:11.730 MSK [35712] ERROR:  column "aleksey170999" does not exist at character 46
+2021-11-04 21:09:11.730 MSK [35712] STATEMENT:  INSERT INTO users(user_name, user_id) VALUES(Aleksey170999, 784017926);
+2021-11-04 21:25:57.136 MSK [36071] ERROR:  operator does not exist: character varying = integer at character 43
+2021-11-04 21:25:57.136 MSK [36071] HINT:  No operator matches the given name and argument types. You might need to add explicit type casts.
+2021-11-04 21:25:57.136 MSK [36071] STATEMENT:  SELECT user_name FROM users WHERE user_id = 784017926
+2021-11-04 21:26:01.170 MSK [36076] ERROR:  operator does not exist: character varying = integer at character 43
+2021-11-04 21:26:01.170 MSK [36076] HINT:  No operator matches the given name and argument types. You might need to add explicit type casts.
+2021-11-04 21:26:01.170 MSK [36076] STATEMENT:  SELECT user_name FROM users WHERE user_id = 784017926
+2021-11-04 21:26:30.321 MSK [36087] ERROR:  syntax error at or near "%" at character 45
+2021-11-04 21:26:30.321 MSK [36087] STATEMENT:  SELECT user_name FROM users WHERE user_id = %s
+2021-11-04 21:30:13.344 MSK [36174] ERROR:  operator does not exist: character varying = integer at character 43
+2021-11-04 21:30:13.344 MSK [36174] HINT:  No operator matches the given name and argument types. You might need to add explicit type casts.
+2021-11-04 21:30:13.344 MSK [36174] STATEMENT:  SELECT user_name FROM users WHERE user_id = 8;
+2021-11-04 22:22:34.265 MSK [36839] ERROR:  operator does not exist: character varying = integer at character 43
+2021-11-04 22:22:34.265 MSK [36839] HINT:  No operator matches the given name and argument types. You might need to add explicit type casts.
+2021-11-04 22:22:34.265 MSK [36839] STATEMENT:  SELECT user_name FROM users WHERE user_id = 784017926;
+2021-11-05 12:31:17.284 MSK [39125] ERROR:  syntax error at or near "users" at character 6
+2021-11-05 12:31:17.284 MSK [39125] STATEMENT:  drop users;
+2021-11-05 12:32:46.140 MSK [39902] ERROR:  invalid input syntax for type integer: "Aleksey170999" at character 26
+2021-11-05 12:32:46.140 MSK [39902] STATEMENT:  INSERT INTO users VALUES('Aleksey170999', '784017926');
+2021-11-05 12:43:03.447 MSK [40087] FATAL:  role "postgres1" does not exist
+2021-11-05 12:43:04.629 MSK [40093] FATAL:  role "postgres1" does not exist
+2021-11-06 13:41:26.947 MSK [45080] ERROR:  relation "users" does not exist at character 23
+2021-11-06 13:41:26.947 MSK [45080] STATEMENT:  SELECT user_name FROM users WHERE user_id = '784017926';
+2021-11-06 13:42:07.304 MSK [44995] ERROR:  relation "users" does not exist at character 15
+2021-11-06 13:42:07.304 MSK [44995] STATEMENT:  select * from users
+	;
+2021-11-06 13:42:14.696 MSK [44995] ERROR:  syntax error at or near "fro" at character 10
+2021-11-06 13:42:14.696 MSK [44995] STATEMENT:  select * fro profile
+	l
+	;
+2021-11-06 13:42:18.428 MSK [44995] ERROR:  syntax error at or near "fro" at character 10
+2021-11-06 13:42:18.428 MSK [44995] STATEMENT:  select * fro profile;
+2021-11-06 14:35:57.976 MSK [45804] ERROR:  operator does not exist: character varying = integer at character 41
+2021-11-06 14:35:57.976 MSK [45804] HINT:  No operator matches the given name and argument types. You might need to add explicit type casts.
+2021-11-06 14:35:57.976 MSK [45804] STATEMENT:  SELECT wallet FROM profile WHERE user_id=784017926
+2021-11-06 14:36:48.595 MSK [45824] ERROR:  operator does not exist: character varying = integer at character 41
+2021-11-06 14:36:48.595 MSK [45824] HINT:  No operator matches the given name and argument types. You might need to add explicit type casts.
+2021-11-06 14:36:48.595 MSK [45824] STATEMENT:  SELECT wallet FROM profile WHERE user_id=784017926
+2021-11-07 20:42:35.194 MSK [53115] ERROR:  syntax error at or near "integer" at character 41
+2021-11-07 20:42:35.194 MSK [53115] STATEMENT:  alter table profile
+	alter column wallet
+	integer;
+2021-11-07 20:43:12.964 MSK [53115] ERROR:  syntax error at or near "smallint" at character 41
+2021-11-07 20:43:12.964 MSK [53115] STATEMENT:  alter table profile
+	alter column wallet smallint;
+2021-11-07 20:43:46.728 MSK [53115] ERROR:  syntax error at or near "column" at character 7
+2021-11-07 20:43:46.728 MSK [53115] STATEMENT:  alter column wallet smallint;
+2021-11-07 20:44:58.647 MSK [53115] ERROR:  syntax error at or near "SMALLINT" at character 41
+2021-11-07 20:44:58.647 MSK [53115] STATEMENT:  ALTER TABLE profile
+	ALTER COLUMN wallet SMALLINT;
+2021-11-07 20:45:21.762 MSK [53115] ERROR:  syntax error at or near "MODIFY" at character 21
+2021-11-07 20:45:21.762 MSK [53115] STATEMENT:  ALTER TABLE profile
+	MODIFY COLUMN wallet SMALLINT;
+2021-11-07 20:45:34.498 MSK [53115] ERROR:  syntax error at or near "MODIFY" at character 21
+2021-11-07 20:45:34.498 MSK [53115] STATEMENT:  ALTER TABLE profile
+	MODIFY wallet SMALLINT;
+2021-11-07 20:46:10.417 MSK [53115] ERROR:  syntax error at or near "profile" at character 6
+2021-11-07 20:46:10.417 MSK [53115] STATEMENT:  drop profile.;
+	drop profile;
+2021-11-07 20:46:15.632 MSK [53115] ERROR:  syntax error at or near "profile" at character 6
+2021-11-07 20:46:15.632 MSK [53115] STATEMENT:  drop profile;
+2021-11-07 20:47:53.282 MSK [53219] ERROR:  syntax error at or near ";" at character 81
+2021-11-07 20:47:53.282 MSK [53219] STATEMENT:  CREATE TABLE profile(
+	id serial,
+	user_id varchar(9),
+	user_name varchar(30),adawd;
+	;
+	);
+2021-11-08 18:42:40.721 MSK [60487] ERROR:  syntax error at end of input at character 40
+2021-11-08 18:42:40.721 MSK [60487] STATEMENT:  SELECT * FROM profile WHERE user_id = ?
+2021-11-08 18:42:58.276 MSK [60498] ERROR:  syntax error at or near ";" at character 40
+2021-11-08 18:42:58.276 MSK [60498] STATEMENT:  SELECT * FROM profile WHERE user_id = ?;
+2021-11-08 18:44:59.268 MSK [60533] ERROR:  syntax error at end of input at character 40
+2021-11-08 18:44:59.268 MSK [60533] STATEMENT:  SELECT * FROM profile WHERE user_id = ?
+2021-11-08 18:46:29.401 MSK [60590] ERROR:  syntax error at or near "`" at character 15
+2021-11-08 18:46:29.401 MSK [60590] STATEMENT:  SELECT * FROM `profile` WHERE `user_id` = ?
+2021-11-08 18:47:05.783 MSK [60621] ERROR:  syntax error at or near "`" at character 15
+2021-11-08 18:47:05.783 MSK [60621] STATEMENT:  SELECT * FROM `profile` WHERE `user_id` = '784017926'
+2021-11-08 18:53:58.256 MSK [58206] ERROR:  syntax error at or near "from" at character 30
+2021-11-08 18:53:58.256 MSK [58206] STATEMENT:  select * from profile
+	delete from profile;
+2021-11-08 18:54:04.276 MSK [58206] ERROR:  syntax error at or near "*" at character 30
+2021-11-08 18:54:04.276 MSK [58206] STATEMENT:  select * from profile
+	delete * from profile;
+2021-11-08 18:54:15.491 MSK [58206] ERROR:  syntax error at or near "sel" at character 1
+2021-11-08 18:54:15.491 MSK [58206] STATEMENT:  sel
+	;
+2021-11-08 18:54:23.330 MSK [60887] ERROR:  value too long for type character varying(9)
+2021-11-08 18:54:23.330 MSK [60887] STATEMENT:  INSERT INTO profile VALUES('784017926', 'Aleksey170999', 0)
+2021-11-08 18:56:15.202 MSK [60923] ERROR:  column "user_id" does not exist at character 28
+2021-11-08 18:56:15.202 MSK [60923] HINT:  There is a column named "user_id" in table "profile", but it cannot be referenced from this part of the query.
+2021-11-08 18:56:15.202 MSK [60923] STATEMENT:  INSERT INTO profile VALUES(user_id = '784017926', user_name = 'Aleksey170999', wallet = 0)
+2021-11-08 18:56:30.388 MSK [60933] ERROR:  invalid input syntax for type integer: "wallet" at character 84
+2021-11-08 18:56:30.388 MSK [60933] STATEMENT:  INSERT INTO profile VALUES('user_id' = '784017926', 'user_name' = 'Aleksey170999', 'wallet' = 0)
+2021-11-08 18:57:07.396 MSK [60952] ERROR:  invalid input syntax for type integer: "wallet" at character 84
+2021-11-08 18:57:07.396 MSK [60952] STATEMENT:  INSERT INTO profile VALUES('user_id' = '784017926', 'user_name' = 'Aleksey170999', 'wallet' = 0)
+2021-11-08 18:57:29.755 MSK [60968] ERROR:  operator does not exist: character varying = integer at character 45
+2021-11-08 18:57:29.755 MSK [60968] HINT:  No operator matches the given name and argument types. You might need to add explicit type casts.
+2021-11-08 18:57:29.755 MSK [60968] STATEMENT:  SELECT user_name FROM profile WHERE user_id = 784017926
+2021-11-08 18:58:09.547 MSK [60988] ERROR:  invalid input syntax for type integer: "wallet" at character 84
+2021-11-08 18:58:09.547 MSK [60988] STATEMENT:  INSERT INTO profile VALUES('user_id' = '784017926', 'user_name' = 'Aleksey170999', 'wallet' = 0)
+2021-11-08 18:58:55.735 MSK [61006] ERROR:  column "aleksey170999" does not exist at character 67
+2021-11-08 18:58:55.735 MSK [61006] STATEMENT:  INSERT INTO profile(user_id, user_name, wallet) VALUES(784017926, Aleksey170999, 0)
+2021-11-08 18:59:13.859 MSK [61018] ERROR:  column "aleksey170999" does not exist at character 69
+2021-11-08 18:59:13.859 MSK [61018] STATEMENT:  INSERT INTO profile(user_id, user_name, wallet) VALUES('784017926', Aleksey170999, 0)
+2021-11-09 14:43:43.631 MSK [66281] ERROR:  operator does not exist: character varying = integer at character 47
+2021-11-09 14:43:43.631 MSK [66281] HINT:  No operator matches the given name and argument types. You might need to add explicit type casts.
+2021-11-09 14:43:43.631 MSK [66281] STATEMENT:  UPDATE profile SET wallet = 123 WHERE user_id = 784017926
