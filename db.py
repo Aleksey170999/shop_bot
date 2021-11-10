@@ -31,5 +31,21 @@ class Database:
         with self.connection:
             self.cursor.execute("UPDATE profile SET wallet = {} WHERE user_id = '{}'".format(payment_amount + cur_wallet, user_id))
 
+    def add_payment(self, user_id, money, bill_id):
+        with self.connection:
+            self.cursor.execute("INSERT INTO payments(user_id, money, bill_id) VALUES({}, '{}', {})".format(user_id, money, bill_id))
+
+    def delete_payment(self, user_id):
+        with self.connection:
+            self.cursor.execute("DELETE FROM payments WHERE user_id = '{}'".format(user_id))
+
+    def get_payment(self, bill_id):
+        with self.connection:
+            self.cursor.execute("SELECT * FROM payments WHERE bill_id ='{}'".format(bill_id))
+            if not bool(len(self.cursor.fetchone())):
+                return False
+            else:
+                return self.cursor.fetchone()[0]
+
 
 db = Database()

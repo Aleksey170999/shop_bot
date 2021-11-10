@@ -254,3 +254,10 @@
 2021-11-09 14:43:43.631 MSK [66281] ERROR:  operator does not exist: character varying = integer at character 47
 2021-11-09 14:43:43.631 MSK [66281] HINT:  No operator matches the given name and argument types. You might need to add explicit type casts.
 2021-11-09 14:43:43.631 MSK [66281] STATEMENT:  UPDATE profile SET wallet = 123 WHERE user_id = 784017926
+2021-11-09 18:17:27.520 MSK [68375] ERROR:  syntax error at or near "dele" at character 1
+2021-11-09 18:17:27.520 MSK [68375] STATEMENT:  dele
+	;
+2021-11-09 18:17:47.244 MSK [68375] ERROR:  syntax error at or near "*" at character 8
+2021-11-09 18:17:47.244 MSK [68375] STATEMENT:  delete * from payments where wallet = 369;
+2021-11-09 18:17:54.486 MSK [68375] ERROR:  column "wallet" does not exist at character 28
+2021-11-09 18:17:54.486 MSK [68375] STATEMENT:  delete from payments where wallet = 369;
