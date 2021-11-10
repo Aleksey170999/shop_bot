@@ -261,3 +261,37 @@
 2021-11-09 18:17:47.244 MSK [68375] STATEMENT:  delete * from payments where wallet = 369;
 2021-11-09 18:17:54.486 MSK [68375] ERROR:  column "wallet" does not exist at character 28
 2021-11-09 18:17:54.486 MSK [68375] STATEMENT:  delete from payments where wallet = 369;
+2021-11-10 11:38:43.099 MSK [71984] ERROR:  column "whiteapfel" does not exist at character 72
+2021-11-10 11:38:43.099 MSK [71984] STATEMENT:  INSERT INTO payments(user_id, money, bill_id) VALUES(784017926, '123', WhiteApfel-PyQiwiP2P-53352286-270)
+2021-11-10 11:39:42.442 MSK [72012] ERROR:  column "whiteapfel" does not exist at character 70
+2021-11-10 11:39:42.442 MSK [72012] STATEMENT:  INSERT INTO payments(user_id, money, bill_id) VALUES(784017926, 123, WhiteApfel-PyQiwiP2P-53358227-234)
+2021-11-10 12:29:12.833 MSK [72068] ERROR:  syntax error at or near "varchar" at character 29
+2021-11-10 12:29:12.833 MSK [72068] STATEMENT:  update payments set bill_id varchar(50);
+2021-11-10 12:32:48.311 MSK [72780] ERROR:  column "whiteapfel" does not exist at character 70
+2021-11-10 12:32:48.311 MSK [72780] STATEMENT:  INSERT INTO payments(user_id, money, bill_id) VALUES(784017926, 123, WhiteApfel-PyQiwiP2P-53676789-279)
+2021-11-10 12:33:12.778 MSK [72800] ERROR:  column "whiteapfel" does not exist at character 72
+2021-11-10 12:33:12.778 MSK [72800] STATEMENT:  INSERT INTO payments(user_id, money, bill_id) VALUES(784017926, 12312, WhiteApfel-PyQiwiP2P-53679261-375)
+2021-11-10 12:35:34.406 MSK [72068] ERROR:  syntax error at or near "*" at character 8
+2021-11-10 12:35:34.406 MSK [72068] STATEMENT:  delete * from payments;
+2021-11-10 13:25:59.375 MSK [74076] ERROR:  column "whiteapfel" does not exist at character 39
+2021-11-10 13:25:59.375 MSK [74076] STATEMENT:  SELECT * FROM payments WHERE bill_id =WhiteApfel-PyQiwiP2P-53985354-929
+2021-11-10 13:37:45.469 MSK [74352] ERROR:  column "whiteapfel" does not exist at character 38
+2021-11-10 13:37:45.469 MSK [74352] STATEMENT:  DELETE FROM payments WHERE bill_id = WhiteApfel-PyQiwiP2P-53985354-929
+2021-11-10 14:09:49.385 MSK [74783] ERROR:  column "whiteapfel" does not exist at character 45
+2021-11-10 14:09:49.385 MSK [74783] STATEMENT:  SELECT user_id FROM payments WHERE bill_id =WhiteApfel-PyQiwiP2P-54069437-167
+2021-11-10 14:09:58.501 MSK [74798] ERROR:  column "whiteapfel" does not exist at character 46
+2021-11-10 14:09:58.501 MSK [74798] STATEMENT:  SELECT user_id FROM payments WHERE bill_id = WhiteApfel-PyQiwiP2P-54069437-167
+2021-11-10 14:18:19.600 MSK [74524] ERROR:  column "whiteapfel" does not exist at character 44
+2021-11-10 14:18:19.600 MSK [74524] STATEMENT:  insert into payments values (784017926, 1, WhiteApfel-PyQiwiP2P-54069437-167);
+2021-11-10 14:18:37.755 MSK [74524] ERROR:  column "whiteapfel" does not exist at character 44
+2021-11-10 14:18:37.755 MSK [74524] STATEMENT:  insert into payments values (784017926, 1, WhiteApfel-PyQiwiP2P-54069437-167);
+2021-11-10 14:18:48.260 MSK [74524] ERROR:  column "whiteapfel" does not exist at character 44
+2021-11-10 14:18:48.260 MSK [74524] STATEMENT:  insert into payments values (784017926, 1, WhiteApfel-PyQiwiP2P-54069437-167);
+2021-11-10 14:18:48.260 MSK [74524] ERROR:  syntax error at or near "2" at character 1
+2021-11-10 14:18:48.260 MSK [74524] STATEMENT:  2C;
+2021-11-10 14:20:28.336 MSK [75021] ERROR:  syntax error at or near "ins" at character 1
+2021-11-10 14:20:28.336 MSK [75021] STATEMENT:  ins
+	;
+2021-11-10 14:21:05.554 MSK [75021] ERROR:  column "WhiteApfel-PyQiwiP2P-54069437-167" does not exist at character 45
+2021-11-10 14:21:05.554 MSK [75021] STATEMENT:  insert into payments 
+	values (784017926, 1, "WhiteApfel-PyQiwiP2P-54069437-167");

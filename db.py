@@ -29,23 +29,33 @@ class Database:
 
     def top_up_wallet(self, cur_wallet, user_id, payment_amount):
         with self.connection:
-            self.cursor.execute("UPDATE profile SET wallet = {} WHERE user_id = '{}'".format(payment_amount + cur_wallet, user_id))
+            self.cursor.execute("UPDATE profile SET wallet = {} WHERE user_id = '{}'".format(int(payment_amount + cur_wallet), user_id))
 
     def add_payment(self, user_id, money, bill_id):
         with self.connection:
-            self.cursor.execute("INSERT INTO payments(user_id, money, bill_id) VALUES({}, '{}', {})".format(user_id, money, bill_id))
+            self.cursor.execute("INSERT INTO payments(user_id, money, bill_id) VALUES({}, {}, '{}')".format(user_id, money, bill_id))
 
-    def delete_payment(self, user_id):
+    def delete_payment(self, bill_id):
         with self.connection:
-            self.cursor.execute("DELETE FROM payments WHERE user_id = '{}'".format(user_id))
+            self.cursor.execute("DELETE FROM payments WHERE bill_id = '{}'".format(bill_id))
 
     def get_payment(self, bill_id):
         with self.connection:
-            self.cursor.execute("SELECT * FROM payments WHERE bill_id ='{}'".format(bill_id))
-            if not bool(len(self.cursor.fetchone())):
+            self.cursor.execute("SELECT * FROM payments WHERE bill_id = '{}'".format(bill_id))
+            if not bool(len(self.cursor.fetchall())):
                 return False
             else:
-                return self.cursor.fetchone()[0]
+                return str(self.cursor.fetchall())
+
+    def get_bill_id(self, user_id):
+        with self.connection:
+            self.cursor.execute("SELECT bill_id FROM payments WHERE user_id ='{}'".format(user_id))
+            return int(self.cursor.fetchone()[0])
+
+    def get_money(self, bill_id):
+        with self.connection:
+            self.cursor.execute("SELECT money FROM payments WHERE bill_id ='{}'".format(bill_id))
+            return int(self.cursor.fetchone()[0])
 
 
 db = Database()

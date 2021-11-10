@@ -5,11 +5,11 @@ import psycopg2
 from pyqiwip2p import QiwiP2P
 
 
-QIWI_TOKEN = "81a24bc005bb44a588131ed0e7aa907a"
+QIWI_TOKEN = "eyJ2ZXJzaW9uIjoiUDJQIiwiZGF0YSI6eyJwYXlpbl9tZXJjaGFudF9zaXRlX3VpZCI6IjgxZHY0ay0wMCIsInVzZXJfaWQiOiI3OTUwNjkyNzcyNCIsInNlY3JldCI6ImFhMGJmMWY3YzkzYTVlMzM1YTNjMTFkZjJmNWUzOTViYjAwMTg5YTc4NzdhMzg1NGZkZmU5ZGE2N2U4NmZjMWYifX0="
 PHONE = "+79506927724"
 QIWI = QiwiP2P(auth_key=QIWI_TOKEN)
 
-BOT_TOKEN = "2098590577:AAFEUxwx8sVzpcuAImg8IjH4HoxUlC0Ax7g"
+BOT_TOKEN = "2098590577:AAHDaPLQUk7-AmAqmUUr-Wi0Xg29ScPqy48"
 async_bot = Bot(token=BOT_TOKEN,parse_mode=types.ParseMode.HTML)
 asbot = Dispatcher(bot=async_bot)
 
