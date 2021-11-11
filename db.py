@@ -1,5 +1,4 @@
 import psycopg2
-from asycnconf import USER, PASSWORD, HOST, DB_NAME
 
 
 class Database:
@@ -9,7 +8,7 @@ class Database:
         self.PASSWORD = "Dmesggrepeth1"
         self.DB_NAME = "el_shopbot"
 
-        self.connection = psycopg2.connect(user=USER, password=PASSWORD, host=HOST, database=DB_NAME)
+        self.connection = psycopg2.connect(user=self.USER, password=self.PASSWORD, host=self.HOST, database=self.DB_NAME)
         self.cursor = self.connection.cursor()
 
     def user_exists(self, user_id):
@@ -56,6 +55,8 @@ class Database:
         with self.connection:
             self.cursor.execute("SELECT money FROM payments WHERE bill_id ='{}'".format(bill_id))
             return int(self.cursor.fetchone()[0])
+
+
 
 
 db = Database()

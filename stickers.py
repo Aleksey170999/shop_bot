@@ -1,0 +1,1 @@
+jopik_fun = r"CAACAgIAAxkBAAIDvWGNXR43ex_jditKYqucYLvRi_pCAAImDwACd3tpSKj1X2HRWLq9IgQ"

@@ -295,3 +295,18 @@
 2021-11-10 14:21:05.554 MSK [75021] ERROR:  column "WhiteApfel-PyQiwiP2P-54069437-167" does not exist at character 45
 2021-11-10 14:21:05.554 MSK [75021] STATEMENT:  insert into payments 
 	values (784017926, 1, "WhiteApfel-PyQiwiP2P-54069437-167");
+2021-11-11 12:42:35.381 MSK [32832] LOG:  received fast shutdown request
+2021-11-11 12:42:35.382 MSK [32832] LOG:  aborting any active transactions
+2021-11-11 12:42:35.391 MSK [32832] LOG:  background worker "logical replication launcher" (PID 32839) exited with exit code 1
+2021-11-11 12:42:35.392 MSK [32834] LOG:  shutting down
+2021-11-11 12:42:35.413 MSK [32832] LOG:  database system is shut down
+2021-11-11 15:11:00.075 MSK [1153] LOG:  starting PostgreSQL 13.4 on x86_64-apple-darwin19.6.0, compiled by Apple clang version 11.0.3 (clang-1103.0.32.62), 64-bit
+2021-11-11 15:11:00.078 MSK [1153] LOG:  listening on IPv6 address "::1", port 5432
+2021-11-11 15:11:00.079 MSK [1153] LOG:  listening on IPv4 address "127.0.0.1", port 5432
+2021-11-11 15:11:00.079 MSK [1153] LOG:  listening on Unix socket "/tmp/.s.PGSQL.5432"
+2021-11-11 15:11:00.085 MSK [1154] LOG:  database system was shut down at 2021-11-11 12:42:35 MSK
+2021-11-11 15:11:00.095 MSK [1153] LOG:  database system is ready to accept connections
+2021-11-11 20:47:30.208 MSK [3680] ERROR:  column "niqumi" does not exist at character 54
+2021-11-11 20:47:30.208 MSK [3680] STATEMENT:  update profile set wallet= 1000000 where user_name = niqumi;
+2021-11-11 20:47:40.508 MSK [3680] ERROR:  column "niqumi" does not exist at character 55
+2021-11-11 20:47:40.508 MSK [3680] STATEMENT:  update profile set wallet = 1000000 where user_name = niqumi;
