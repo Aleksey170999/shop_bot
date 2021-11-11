@@ -2,7 +2,6 @@ from aiogram import Bot, Dispatcher, types, executor
 from aiogram.types import *
 
 
-BOT_TOKEN = "1723876215:AAHdgELrqO_oYUhIHu-7n3pBgRg5G99jj_w"
 async_bot = Bot(token=BOT_TOKEN, parse_mode=types.ParseMode.HTML)
 dp = Dispatcher(bot=async_bot)
 
