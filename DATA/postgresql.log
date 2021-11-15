@@ -310,3 +310,32 @@
 2021-11-11 20:47:30.208 MSK [3680] STATEMENT:  update profile set wallet= 1000000 where user_name = niqumi;
 2021-11-11 20:47:40.508 MSK [3680] ERROR:  column "niqumi" does not exist at character 55
 2021-11-11 20:47:40.508 MSK [3680] STATEMENT:  update profile set wallet = 1000000 where user_name = niqumi;
+2021-11-14 19:42:13.138 MSK [5538] FATAL:  terminating connection due to administrator command
+2021-11-14 19:42:13.139 MSK [1153] LOG:  received smart shutdown request
+2021-11-14 19:42:13.138 MSK [11079] FATAL:  terminating connection due to administrator command
+2021-11-14 19:42:13.186 MSK [1153] LOG:  background worker "logical replication launcher" (PID 1160) exited with exit code 1
+2021-11-14 19:42:13.213 MSK [1155] LOG:  shutting down
+2021-11-14 19:42:13.251 MSK [1153] LOG:  database system is shut down
+2021-11-14 19:43:56.275 MSK [703] LOG:  starting PostgreSQL 13.4 on x86_64-apple-darwin19.6.0, compiled by Apple clang version 11.0.3 (clang-1103.0.32.62), 64-bit
+2021-11-14 19:43:56.278 MSK [703] LOG:  listening on IPv6 address "::1", port 5432
+2021-11-14 19:43:56.278 MSK [703] LOG:  listening on IPv4 address "127.0.0.1", port 5432
+2021-11-14 19:43:56.278 MSK [703] LOG:  listening on Unix socket "/tmp/.s.PGSQL.5432"
+2021-11-14 19:43:56.287 MSK [704] LOG:  database system was shut down at 2021-11-14 19:42:13 MSK
+2021-11-14 19:43:56.299 MSK [703] LOG:  database system is ready to accept connections
+2021-11-14 19:45:16.988 MSK [758] ERROR:  syntax error at or near "clear" at character 1
+2021-11-14 19:45:16.988 MSK [758] STATEMENT:  clear
+	;
+2021-11-14 19:54:30.780 MSK [758] ERROR:  syntax error at or near "cls" at character 1
+2021-11-14 19:54:30.780 MSK [758] STATEMENT:  cls
+	select * from profile 
+	;
+2021-11-15 19:35:00.709 MSK [4831] ERROR:  value too long for type character varying(50)
+2021-11-15 19:35:00.709 MSK [4831] STATEMENT:  INSERT INTO payments(user_id, money, bill_id) VALUES(784017926, 12, '<pyqiwip2p.p2p_types.Responses.Bill object at 0x11009c400>')
+2021-11-15 19:52:13.967 MSK [4958] ERROR:  value too long for type character varying(50)
+2021-11-15 19:52:13.967 MSK [4958] STATEMENT:  INSERT INTO payments(user_id, money, bill_id) VALUES(784017926, 2, '<pyqiwip2p.p2p_types.Responses.Bill object at 0x102f9a6a0>')
+2021-11-15 19:52:52.625 MSK [4971] ERROR:  value too long for type character varying(50)
+2021-11-15 19:52:52.625 MSK [4971] STATEMENT:  INSERT INTO payments(user_id, money, bill_id) VALUES(784017926, 3, '<pyqiwip2p.p2p_types.Responses.Bill object at 0x1030a43d0>')
+2021-11-15 19:53:40.786 MSK [4985] ERROR:  value too long for type character varying(50)
+2021-11-15 19:53:40.786 MSK [4985] STATEMENT:  INSERT INTO payments(user_id, money, bill_id) VALUES(784017926, 4, '<pyqiwip2p.p2p_types.Responses.Bill object at 0x1054366a0>')
+2021-11-15 19:54:41.844 MSK [5000] ERROR:  value too long for type character varying(50)
+2021-11-15 19:54:41.844 MSK [5000] STATEMENT:  INSERT INTO payments(user_id, money, bill_id) VALUES(784017926, 4, '<pyqiwip2p.p2p_types.Responses.Bill object at 0x10331a580>')

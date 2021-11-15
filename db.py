@@ -49,14 +49,16 @@ class Database:
     def get_bill_id(self, user_id):
         with self.connection:
             self.cursor.execute("SELECT bill_id FROM payments WHERE user_id ='{}'".format(user_id))
-            return int(self.cursor.fetchone()[0])
+            return str(self.cursor.fetchone()[0])
 
     def get_money(self, bill_id):
         with self.connection:
             self.cursor.execute("SELECT money FROM payments WHERE bill_id ='{}'".format(bill_id))
             return int(self.cursor.fetchone()[0])
 
-
+    def new_cat(self, cat_name):
+        with self.connection:
+            self.cursor.execute("INSERT INTO categories('cat_name') values({})".format(cat_name))
 
 
 db = Database()
