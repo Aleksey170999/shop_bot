@@ -11,7 +11,7 @@ from aiogram.dispatcher.filters.state import State, StatesGroup
 from markups.client_markups import *
 from markups.admin_markups import *
 
-QIWI_TOKEN = "eyJ2ZXJzaW9uIjoiUDJQIiwiZGF0YSI6eyJwYXlpbl9tZXJjaGFudF9zaXRlX3VpZCI6IjgxZHY0ay0wMCIsInVzZXJfaWQiOiI3OTUwNjkyNzcyNCIsInNlY3JldCI6ImFhMGJmMWY3YzkzYTVlMzM1YTNjMTFkZjJmNWUzOTViYjAwMTg5YTc4NzdhMzg1NGZkZmU5ZGE2N2U4NmZjMWYifX0="
+QIWI_TOKEN = ""
 PHONE = "+79506927724"
 QIWI = QiwiP2P(auth_key=QIWI_TOKEN)
 
